@@ -1,0 +1,24 @@
+{
+    "plugin_name": "cdh",
+    "hadoop_version": "5.11.0",
+    "node_processes": [
+        "HDFS_DATANODE",
+        "YARN_NODEMANAGER",
+        "FLUME_AGENT",
+        "IMPALAD",
+        "KAFKA_BROKER"
+    ],
+    "name": "cdh-5110-default-nodemanager-datanode",
+    "image_id": "d432cf49-df1c-4904-9381-58bcdd6d1bfe",
+    "floating_ip_pool": "347a2783-644a-465d-9de5-adb4d972551a",
+    "flavor_id": "13",
+    "auto_security_group": true,
+    "volumes_size": 200,
+    "volumes_per_node": 2,
+    "is_protected": false,
+    "node_configs": {
+      "DATANODE": {
+        "dfs_datanode_du_reserved": 0
+      }
+    }
+}

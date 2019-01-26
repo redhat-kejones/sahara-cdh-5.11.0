@@ -1,0 +1,15 @@
+{
+    "plugin_name": "cdh",
+    "hadoop_version": "5.11.0",
+    "node_processes": [
+        "CLOUDERA_MANAGER",
+        "KMS"
+    ],
+    "name": "cdh-5110-default-manager",
+    "image_id": "d432cf49-df1c-4904-9381-58bcdd6d1bfe",
+    "floating_ip_pool": "347a2783-644a-465d-9de5-adb4d972551a",
+    "flavor_id": "10",
+    "auto_security_group": true,
+    "is_protected": false
+}
+

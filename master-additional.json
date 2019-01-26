@@ -1,0 +1,24 @@
+{
+    "plugin_name": "cdh",
+    "hadoop_version": "5.11.0",
+    "node_processes": [
+        "OOZIE_SERVER",
+        "YARN_JOBHISTORY",
+        "YARN_NODEMANAGER",
+        "HDFS_SECONDARYNAMENODE",
+        "HIVE_METASTORE",
+        "HIVE_SERVER2",
+        "HIVE_WEBHCAT",
+        "SPARK_YARN_HISTORY_SERVER",
+        "SOLR_SERVER",
+        "SQOOP_SERVER",
+        "IMPALA_STATESTORE"
+    ],
+    "name": "cdh-5110-default-master-additional",
+    "image_id": "d432cf49-df1c-4904-9381-58bcdd6d1bfe",
+    "floating_ip_pool": "347a2783-644a-465d-9de5-adb4d972551a",
+    "flavor_id": "12",
+    "auto_security_group": true,
+    "is_protected": false
+}
+

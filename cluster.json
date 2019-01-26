@@ -1,0 +1,33 @@
+{
+    "plugin_name": "cdh",
+    "hadoop_version": "5.11.0",
+    "node_groups": [
+        {
+            "name": "worker-nodemanager-datanode",
+            "count": 3,
+            "node_group_template_id": "c5247564-110c-4665-baa9-474995748e9b"
+        },
+        {
+            "name": "manager",
+            "count": 1,
+            "node_group_template_id": "3a82330f-7b57-4d74-a0a3-cf6f2e989e1c"
+        },
+        {
+            "name": "master-core",
+            "count": 1,
+            "node_group_template_id": "315cd17a-4c70-4ec8-bc41-a5715edae708"
+        },
+        {
+            "name": "master-additional",
+            "count": 1,
+            "node_group_template_id": "d67ce419-2674-42aa-8c7e-802f56562815"
+        }
+    ],
+    "name": "cdh-5110-default-cluster",
+    "cluster_configs": {
+        "general": {
+            "Timeout for Cloudera Manager starting": "600"
+        }
+    },
+    "is_protected": false
+}
